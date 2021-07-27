@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "dc778783-d98a-4b09-92e2-d9d08876c723",
+		"name": "springdemo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/send/singleUserReq",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"deviceId\": \"<your-device-id>\",\r\n    \"deviceType\": \"<your-device-type>\",\r\n    \"payload\": {\r\n        \"message\": \"message1\",\r\n        \"country\": \"germany\"\r\n    },\r\n    \"appId\": \"<your-app-id>\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/send/singleUserReq",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"send",
+						"singleUserReq"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
